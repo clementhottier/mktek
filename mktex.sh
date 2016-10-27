@@ -19,25 +19,26 @@ then
   exit 1
 fi
 
+echo $PATHMKTEX
 
 case $1 in
   "article")
-    cp ~/Developement/mktex/article.tex $PWD/$2.tex
+    cp $PATHMKTEX/article.tex $PWD/$2.tex
     echo -e "\n    Creation of $2.tex\n"
     ;;
 
   "report")
-    cp ~/Developement/mktex/report.tex $PWD/$2.tex
+    cp $PATHMKTEX/report.tex $PWD/$2.tex
     echo -e "\n    Creation of $2.tex\n"
     ;;
 
   "beamer")
-    cp ~/Developement/mktex/beamer.tex $PWD/$2.tex
+    cp $PATHMKTEX/beamer.tex $PWD/$2.tex
     echo -e "\n    Creation of $2.tex\n"
     ;;
 
   "lettre")
-    cp ~/Developement/mktex/lettre.tex $PWD/$2.tex
+    cp $PATHMKTEX/lettre.tex $PWD/$2.tex
     echo -e "\n    Creation of $2.tex\n"
     ;;
 
